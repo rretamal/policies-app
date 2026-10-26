@@ -1,154 +1,47 @@
 # Privacy Policy – Zodiara
 
-**Effective Date:** February 3, 2026  
-Contact: rretamal.dev@live.com
+**Effective date: October 26, 2026**
+Developer: Ricardo Retamal  
+Contact: hello@rretamal.dev
 
----
+## About Zodiara
 
-## Introduction
+Zodiara provides horoscopes and symbolic tarot and compatibility readings for reflection and entertainment. You do not need to enter a name or email address to use the app. The app automatically creates a guest identity for your installation through Firebase Authentication to operate the moons wallet and recover readings.
 
-Zodiara ("the App") is a spiritual and reflective content app that offers daily experiences such as horoscopes, symbolic readings, and personalized messages.
+## Information processed
 
-You do not need to create an account to use the App.  
-We only collect the information necessary to operate, improve the experience, and keep the service stable.
+- **Guest identity and wallet:** a pseudonymous guest account identifier, moon balance, daily refills, reward tickets, advertising reward verification, reading reservations, charges and refunds. A refresh credential is kept in the device's secure storage. Server records support delivery, recovery and fraud prevention.
+- **Readings:** selected cards, zodiac signs, language and completed generated readings are stored with reading operations so you can reopen them. Zodiara uses artificial intelligence to generate entertainment content based on your selections. The selected cards, zodiac signs and language are processed by Microsoft Azure AI Foundry. Your name, email address, authentication credentials and guest account identifier are not included in these generation requests.
+- **Usage events:** the app sends event names, timestamps, a randomly generated installation identifier and event parameters, such as selected sign or language, to our server. Events are stored in Google Cloud Firestore. The service also keeps operational logs for troubleshooting and security.
+- **Notifications:** Firebase Cloud Messaging processes registration identifiers to deliver enabled push notifications. You can disable notifications in your device settings.
+- **Advertising:** when you choose a rewarded advertisement, Google AdMob processes device and advertising identifiers, advertising interactions, diagnostics and potentially approximate location inferred from an IP address, subject to applicable choices and SDK configuration. The updated app uses a temporary verification token so our server can validate the reward without sending your guest account identifier to the advertising provider. Versions that use the previous verification flow cannot request rewarded ads after the server update. No moons are granted merely because an ad was opened or closed.
 
----
+The app does not request access to your contacts, camera, microphone or precise GPS location. An optional date picker can determine your zodiac sign; the chosen birth date is stored locally, and only the resulting sign is needed for reading generation. We do not ask for a real name or home address to generate readings. If you use friendship invitations, the server stores invitation and installation identifiers, the chosen display name, signs, friendship links and visit-streak information needed to show that feature. Notification preferences include your chosen time and time zone. If you contact support, your message and contact details are used to handle your request.
 
-## 1. Information We Collect
+## Purposes and providers
 
-### 1.1 Device and Usage Data
+We process this information to deliver content, maintain your wallet and reading history, send enabled notifications, understand app use, diagnose errors, prevent duplicate charges and rewards, and provide optional advertising.
 
-| Data | Example | Purpose |
-| --- | --- | --- |
-| **Advertising ID** (AAID/IDFA) | `a1b2c3...` | Ads, frequency capping, fraud prevention |
-| **Device information** | Model, OS version | Compatibility, debugging |
-| **App information** | Version, session duration, screens viewed | Usage analysis and product improvement |
+Providers include Google Firebase Authentication, Cloud Firestore, Cloud Messaging, Cloud Run and AdMob, and Microsoft Azure AI Foundry. Providers may process information outside your country. Their policies provide further information: [Google Privacy Policy](https://policies.google.com/privacy), [Firebase privacy](https://firebase.google.com/support/privacy), and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
-This data is processed via **Firebase Analytics** and **Firebase Crashlytics**.
+## Advertising choices
 
-### 1.2 Content Generated in the App
+Rewarded advertisements are optional. The daily horoscope and daily card do not require watching an advertisement. Where applicable, Google's User Messaging Platform presents advertising choices before requesting ads. Refusing personalized advertising does not guarantee that an advertisement will be available. Where Google requires privacy options, you can reopen them from the privacy button on the moons screen. Advertising identifiers can be managed in your device's privacy settings; reinstalling the app does not itself reset the system advertising identifier.
 
-The App displays dynamically generated content (for example, daily messages or symbolic interpretations).
+## Storage, security and retention
 
-We do not request personally identifiable information such as real name, email address, or physical address.  
-We do not analyze or store personal entries outside the technical context required to deliver the content.
+App-to-server communication uses HTTPS. Guest authentication credentials use device secure storage, and wallet updates are processed by the server rather than direct mobile database writes.
 
-### 1.3 Notifications
+Wallet activity, completed readings and usage events currently do not expire automatically. Operational logs and provider-managed records are retained according to their configured retention settings. You may request deletion, subject to applicable legal, security and fraud prevention requirements.
 
-Zodiara may send push notifications (for example, daily reminders).  
-Notifications can be disabled at any time from your operating system settings.  
-We do not use notifications for personal tracking.
+Clearing app data or losing the guest credential can prevent access to the original balance and history. Guest account linking and cross-device recovery are not available in this version. Removing the app does not automatically delete server records.
 
-### 1.4 Sensors and Permissions
+## Privacy requests
 
-The App does not access the camera, microphone, precise location, or contacts.  
-Any permission requested is directly related to the core functionality of the App.
+Depending on applicable law, you may have rights to access, correct or delete information and to withdraw consent or object to certain processing. Contact **hello@rretamal.dev** with your request. Because guest users do not register an email address, we may need information sufficient to locate and verify the relevant guest record. Do not send authentication tokens or passwords by email. In the updated app, open Profile → Privacy and my data → Request deletion of my data. After confirmation, the app sends an authenticated request and pauses account access while it is processed. Deletion is not instant: legacy installation records require an ownership review before processing. You can check the request status from that screen. Processing removes the Firebase guest account, moon balance, reading operations and associated verified installation records, including notification registration, usage events and friendship links. Local credentials and saved reading files are removed when the app receives completion confirmation. A minimal deletion-request status record remains for support and to prevent duplicate processing.
 
----
+Outside the app, visit [Zodiara data deletion](https://zodiara-a11b5.web.app/delete-data.html) or contact **hello@rretamal.dev** to initiate a request. Do not send passwords, Firebase credentials or advertising IDs by email. Requests are handled in accordance with applicable law.
 
-## 2. How We Use Your Data
+## Children and changes
 
-We use the information collected to:
-
-- Deliver the App's core content
-- Analyze performance and stability
-- Detect and fix errors
-- Improve the overall user experience
-- Show advertising (if applicable)
-- Meet legal and security requirements
-
----
-
-## 3. Advertising and Consent
-
-Zodiara may display ads through **Google AdMob**.
-
-In regions where it applies (EU / UK / Switzerland):
-
-- **Google User Messaging Platform (UMP)** is used to manage consent.
-- If you accept: personalized ads may be shown.
-- If you refuse: only non-personalized ads (NPA) will be shown.
-- You can change your choice at any time in **Settings ▸ Privacy** (if available).
-
----
-
-## 4. Sharing Information
-
-We do not sell or rent your personal data.  
-We only share limited information with essential providers:
-
-| Provider | Purpose | Policy |
-| --- | --- | --- |
-| **Google AdMob** | Advertising and measurement | <https://policies.google.com/privacy> |
-| **Firebase (Analytics, Crashlytics)** | Usage statistics and error reporting | <https://firebase.google.com/support/privacy> |
-
-All providers comply with data protection standards and confidentiality agreements.
-
----
-
-## 5. Data Security
-
-We implement reasonable measures to protect your information:
-
-- Encrypted communication (HTTPS / TLS)
-- Secure infrastructure (Google Cloud)
-- Limited and controlled access
-- Regular security updates
-
----
-
-## 6. Data Retention
-
-| Data Type | Retention Period |
-| --- | --- |
-| Analytics events | Up to 14 months |
-| Error logs | Up to 90 days |
-| Advertising ID | Resets when the App is reinstalled or the ID is reset |
-
----
-
-## 7. Your Rights
-
-Depending on your region, you may exercise the following rights:
-
-- **GDPR (EU / UK):** access, rectification, deletion, restriction, portability, and withdrawal of consent.
-- **CCPA / CPRA (California):** know, delete data, and opt out of sale/sharing (we do not sell data).
-
-To exercise these rights, email **rretamal.dev@live.com** with your country and request.  
-We will respond within a maximum of 30 days.
-
----
-
-## 8. Children’s Privacy
-
-Zodiara is not directed to children under 13.  
-We do not knowingly collect information from minors.  
-If we detect data from a minor, we will delete it immediately upon notification.
-
----
-
-## 9. Links and Third-Party Services
-
-The App may include informational links in future versions.  
-Any external link will be clearly identified, and we do not control third-party privacy policies.
-
----
-
-## 10. Changes to This Policy
-
-We may update this Policy from time to time.  
-We will notify you by:
-
-1. Updating this page and the **Effective Date**.
-2. An in-app notice if the change is significant.
-
----
-
-## 11. Contact
-
-If you have questions or privacy-related requests:  
-**rretamal.dev@live.com**
-
----
-
-By using Zodiara, you agree to this Privacy Policy.
+Zodiara is not directed to children under 13. Contact us if you believe a child has supplied information that should be removed. We may update this page as the service changes and will update its effective date when a revision is published.
